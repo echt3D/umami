@@ -11,8 +11,6 @@ if (process.env.SKIP_DB_CHECK) {
 }
 
 function getDatabaseType(url = process.env.DATABASE_URL) {
-  console.log('env', process.env.DATABASE_URL);
-
   const type = url && url.split(':')[0];
 
   if (type === 'postgres') {
