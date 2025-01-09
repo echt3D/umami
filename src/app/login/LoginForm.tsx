@@ -17,6 +17,7 @@ import styles from './LoginForm.module.css';
 
 export function LoginForm() {
   const { formatMessage, labels, getMessage } = useMessages();
+
   const router = useRouter();
   const { post, useMutation } = useApi();
   const { mutate, error, isPending } = useMutation({
