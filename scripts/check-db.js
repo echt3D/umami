@@ -10,7 +10,7 @@ if (process.env.SKIP_DB_CHECK) {
   process.exit(0);
 }
 
-function getDatabaseType(url = process.env.POSTGRES_URL) {
+function getDatabaseType(url = process.env.DATABASE_URL) {
   const type = url && url.split(':')[0];
 
   if (type === 'postgres') {
